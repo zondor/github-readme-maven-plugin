@@ -1,0 +1,26 @@
+# ${project.name}
+#if ( $project.description )
+${project.description}
+
+#end
+#if ( $sections  && $sections.size() > 0  )
+#foreach ( $section in $sections )
+$section
+#end
+
+#end
+#if( $project.developers && $project.developers.size() > 0 )
+# Authors
+#foreach( $developer in $project.developers )
+  * $developer.getName()
+#end
+
+#end
+#if( $project.licenses && $project.licenses.size() > 0 )
+# License
+#foreach( $license in $project.licenses )
+  * $license.getName()
+#end
+
+#end
+Happy hacking!

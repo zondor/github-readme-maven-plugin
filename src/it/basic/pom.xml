@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.mule.tools.github.readme</groupId>
+    <artifactId>basic</artifactId>
+    <version>testing</version>
+
+    <name>Basic Github README Test</name>
+    <description>This is a [basic test](http://www.google.com) that the generated README.md works.</description>
+
+    <licenses>
+        <license>
+            <name>Copyright MuleSoft 2012</name>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>John Doe</name>
+            <email>john at doe dot com</email>
+            <organization>MuleSoft</organization>
+        </developer>
+        <developer>
+            <name>Jane Doe</name>
+            <email>jane at doe dot come</email>
+            <organization>MuleSoft</organization>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.mule.tools</groupId>
+                <artifactId>github-readme-maven-plugin</artifactId>
+                <version>@project.version@</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>generate-readme</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
