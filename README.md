@@ -38,8 +38,10 @@ Add the following plugin to your pom.xml in the build -> plugins section:
 
 among others.
 
+## Authors
   * Alberto Pose
 
+## License
   * CPAL v1.0
 
 Happy hacking!
