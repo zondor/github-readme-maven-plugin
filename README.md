@@ -26,7 +26,8 @@ Add the following plugin to your pom.xml in the build -> plugins section:
             </configuration>
         </execution>
     </executions>
- <plugin>```
+  <plugin>
+```
 
  So that will generate the README.md in the root folder of the project with the information that can be extracted from the following tags:
 
