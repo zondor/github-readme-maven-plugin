@@ -10,14 +10,14 @@ $section
 
 #end
 #if( $project.developers && $project.developers.size() > 0 )
-#\# Authors
+## Authors
 #foreach( $developer in $project.developers )
   * $developer.getName()
 #end
 
 #end
 #if( $project.licenses && $project.licenses.size() > 0 )
-#\# License
+## License
 #foreach( $license in $project.licenses )
   * $license.getName()
 #end
