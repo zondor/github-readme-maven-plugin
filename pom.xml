@@ -104,7 +104,7 @@
                         <id>generate-readme</id>
                         <phase>install</phase>
                         <goals>
-                            <goal>generate-readme</goal>
+                            <goal>generate</goal>
                         </goals>
                         <configuration>
                             <sections>

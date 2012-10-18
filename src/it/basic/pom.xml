@@ -37,7 +37,7 @@
                     <execution>
                         <phase>install</phase>
                         <goals>
-                            <goal>generate-readme</goal>
+                            <goal>generate</goal>
                         </goals>
                     </execution>
                 </executions>

@@ -6,7 +6,7 @@
  * LICENSE.txt file.
  */
 
-package org.mule.tooling.github.readme;
+package org.mule.tools.github.readme;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -30,12 +30,11 @@ import java.util.Properties;
 /**
  * Generates a README.md for the project.
  *
- * @goal generate-readme
+ * @goal generate
  * @phase install
  */
 public class GithubReadmeMojo
-        extends AbstractMojo
-{
+        extends AbstractMojo {
 
     /**
      * Project being built.
@@ -61,9 +60,8 @@ public class GithubReadmeMojo
     protected List<String> sections;
 
     public void execute()
-            throws MojoExecutionException
-    {
-        if ( sourceDirectory.exists() ) {
+            throws MojoExecutionException {
+        if (sourceDirectory.exists()) {
             try {
                 FileUtils.copyFile(sourceDirectory, new File(sourceDirectory.getAbsolutePath() + ".bak"));
             } catch (IOException e) {
@@ -88,20 +86,13 @@ public class GithubReadmeMojo
         context.put("sections", sections);
         Template template;
 
-        try
-        {
+        try {
             template = ve.getTemplate("README.md.tmpl");
-        }
-        catch( ResourceNotFoundException e )
-        {
+        } catch (ResourceNotFoundException e) {
             throw new MojoExecutionException(e.getMessage(), e);
-        }
-        catch( ParseErrorException e )
-        {
+        } catch (ParseErrorException e) {
             throw new MojoExecutionException(e.getMessage(), e);
-        }
-        catch( MethodInvocationException e )
-        {
+        } catch (MethodInvocationException e) {
             throw new MojoExecutionException(e.getMessage(), e);
         }
 
@@ -113,7 +104,7 @@ public class GithubReadmeMojo
             throw new MojoExecutionException(e.getMessage(), e);
         }
 
-        template.merge( context, fileWriter );
+        template.merge(context, fileWriter);
 
         try {
             fileWriter.close();
