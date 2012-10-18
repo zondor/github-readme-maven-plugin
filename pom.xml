@@ -108,11 +108,12 @@
                         </goals>
                         <configuration>
                             <sections>
-                                <section><![CDATA[# Build
+                                <section><![CDATA[
+## Build
 
     mvn clean install
 
-# Usage
+## Usage
 
 Add the following plugin to your pom.xml in the build -> plugins section:
 ```xml
@@ -143,8 +144,8 @@ Add the following plugin to your pom.xml in the build -> plugins section:
   * licenses
   * developers
 
-smong others.
- ]]></section>
+among others.
+]]></section>
                             </sections>
                         </configuration>
                     </execution> 
