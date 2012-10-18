@@ -1,11 +1,11 @@
 # Github README Maven Plugin
 Generates a README.md out of a Maven Project
 
-# Build
+## Build
 
     mvn clean install
 
-# Usage
+## Usage
 
 Add the following plugin to your pom.xml in the build -> plugins section:
 ```xml
@@ -36,12 +36,12 @@ Add the following plugin to your pom.xml in the build -> plugins section:
   * licenses
   * developers
 
-smong others.
+among others.
 
-# Authors
+#\# Authors
   * Alberto Pose
 
-# License
+#\# License
   * CPAL v1.0
 
 Happy hacking!
