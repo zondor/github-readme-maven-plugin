@@ -60,6 +60,7 @@
                         <exclude>**/*.properties</exclude>
                         <exclude>**/*.xml</exclude>
                         <exclude>**/*.md</exclude>
+                        <exclude>**/*.txt</exclude>
                     </excludes>
                     <strictCheck>true</strictCheck>
                 </configuration>
