@@ -95,6 +95,7 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--
             <plugin>
                 <groupId>org.mule.tools</groupId>
                 <artifactId>github-readme-maven-plugin</artifactId>
@@ -151,6 +152,7 @@ among others.
                     </execution> 
                 </executions>
             </plugin>
+            -->
         </plugins>
     </build>
 
